@@ -24,7 +24,7 @@ export class MovieFormComponent implements OnInit, OnDestroy {
       .pipe(debounceTime(1000))
       .subscribe(change => {
         if (change) {
-          this.movieNameEvent.emit(change);
+          this.movieNameEvent.emit(this.form.controls['name'].value);
         }
     });
   }

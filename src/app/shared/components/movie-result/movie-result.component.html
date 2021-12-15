@@ -1,0 +1,15 @@
+<div *ngIf="movies.length > 0" class="card">
+    <p-table [value]="movies" [scrollable]="true" selectionMode="single" [(selection)]="movieSelected"
+        (onRowSelect)="onRowSelect($event)" (onRowUnselect)="onRowUnselect($event)" scrollHeight="400px">
+        <ng-template pTemplate="header">
+            <tr>
+                <th style="min-width:200px">Title</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-movie>
+            <tr [pSelectableRow]="movie">
+                <td style="min-width:200px">{{movie.Title}}</td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>

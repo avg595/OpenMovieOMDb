@@ -10,10 +10,12 @@
             <p>Your 3 most favorite searches</p>
         </div>
         <div class="col-6">
-            <p>Search results/films, series, etc</p>
+            <p>Search results (films/series)</p>
+            <app-movie-result [movies]="movies"></app-movie-result>
         </div>
         <div class="col-6">
             <p>Result 1 detail</p>
+            <app-movie-result-detail></app-movie-result-detail>
         </div>
     </div>
 </div>
