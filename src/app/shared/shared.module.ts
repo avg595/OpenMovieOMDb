@@ -1,19 +1,29 @@
 import { ModuleWithProviders, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // primeng imports
+import { InputTextModule } from 'primeng/inputtext';
 
-// const primeNgModules = [];
+const primeNgModules = [
+  InputTextModule
+];
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    // ...primeNgModules
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    primeNgModules
   ],
   exports: [
     CommonModule,
-    // ...primeNgModules
+    FormsModule,
+    ReactiveFormsModule,
+    primeNgModules
   ]
 })
 export class SharedModule {
