@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { MovieFormComponent } from './components/movie-form/movie-form.component';
+
 // primeng imports
 import { InputTextModule } from 'primeng/inputtext';
 
@@ -11,7 +13,9 @@ const primeNgModules = [
 ];
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    MovieFormComponent
+  ],
   imports: [
     CommonModule,
     FormsModule,
@@ -23,6 +27,7 @@ const primeNgModules = [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
+    MovieFormComponent,
     primeNgModules
   ]
 })

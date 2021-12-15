@@ -11,4 +11,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  onMovieNameEvent(movieName: string): void {
+    console.log(movieName);
+  }
 }
