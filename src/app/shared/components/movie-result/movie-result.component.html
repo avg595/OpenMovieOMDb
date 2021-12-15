@@ -1,4 +1,6 @@
 <div *ngIf="movies.length > 0" class="card">
+    <p>Search results (films/series)</p>
+
     <p-table [value]="movies" [scrollable]="true" selectionMode="single" [(selection)]="movieSelected"
         (onRowSelect)="onRowSelect($event)" (onRowUnselect)="onRowUnselect($event)" scrollHeight="400px">
         <ng-template pTemplate="header">

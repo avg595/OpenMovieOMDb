@@ -3,18 +3,15 @@
 
     <div class="grid">
         <div class="col-6">
-            <p>Search by movie name</p>
             <app-movie-form (movieNameEvent)="onMovieNameEvent($event);"></app-movie-form>
         </div>
         <div class="col-6">
             <p>Your 3 most favorite searches</p>
         </div>
         <div class="col-6">
-            <p>Search results (films/series)</p>
             <app-movie-result [movies]="movies"></app-movie-result>
         </div>
         <div class="col-6">
-            <p>Result 1 detail</p>
             <app-movie-result-detail></app-movie-result-detail>
         </div>
     </div>

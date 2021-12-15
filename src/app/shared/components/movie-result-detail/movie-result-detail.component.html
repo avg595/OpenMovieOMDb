@@ -1,0 +1,14 @@
+<ng-container *ngIf="movie">
+    <p>Result 1 detail</p>
+
+    <div class="grid">
+        <div class="col-16">
+            <p-image src={{movie.Poster}} alt="Image" width="250"></p-image>
+        </div>
+        <div class="col-6">
+            <p>Title: {{movie.Title}}</p>
+            <p>Type: {{movie.Type}}</p>
+            <p>Year: {{movie.Year}}</p>
+        </div>
+    </div>
+</ng-container>
