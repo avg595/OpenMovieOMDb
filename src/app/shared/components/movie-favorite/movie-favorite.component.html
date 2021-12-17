@@ -1,0 +1,11 @@
+<p>Your 3 most favorite searches</p>
+
+<ng-container *ngIf="favoriteMovies.length > 0">
+    <div class="grid">
+        <ng-container *ngFor="let favoriteMovie of favoriteMovies">
+            <div class="col-2 ml-2 mr-1 favorite-movie">
+                {{favoriteMovie.name}}
+            </div>
+        </ng-container>
+    </div>
+</ng-container>

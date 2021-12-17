@@ -6,6 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MovieFormComponent } from './components/movie-form/movie-form.component';
 import { MovieResultComponent } from './components/movie-result/movie-result.component';
 import { MovieResultDetailComponent } from './components/movie-result-detail/movie-result-detail.component';
+import { MovieFavoriteComponent } from './components/movie-favorite/movie-favorite.component';
 
 // primeng imports
 import { InputTextModule } from 'primeng/inputtext';
@@ -22,7 +23,8 @@ const primeNgModules = [
   declarations: [
     MovieFormComponent,
     MovieResultComponent,
-    MovieResultDetailComponent
+    MovieResultDetailComponent,
+    MovieFavoriteComponent
   ],
   imports: [
     CommonModule,
@@ -38,6 +40,7 @@ const primeNgModules = [
     MovieFormComponent,
     MovieResultComponent,
     MovieResultDetailComponent,
+    MovieFavoriteComponent,
     primeNgModules
   ]
 })

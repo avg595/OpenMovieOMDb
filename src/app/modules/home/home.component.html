@@ -3,10 +3,10 @@
 
     <div class="grid">
         <div class="col-6">
-            <app-movie-form (movieNameEvent)="onMovieNameEvent($event);"></app-movie-form>
+            <app-movie-form (movieNameEvent)="onMovieNameEvent($event);" (addFavoriteEvent)="addFavoriteEvent($event);"></app-movie-form>
         </div>
         <div class="col-6">
-            <p>Your 3 most favorite searches</p>
+            <app-movie-favorite></app-movie-favorite>
         </div>
         <div class="col-6">
             <app-movie-result [movies]="movies"></app-movie-result>
